@@ -234,3 +234,103 @@ img{
     display: block;
     width: 100%;
 }
+
+
+/*CAROSSEL DE IMAGENS*/
+
+.laptop-slider{
+    background-color: #242a2c;
+    padding: 125px 0 100px;
+    width: 100%;
+    overflow: auto;
+}
+
+.slideshow{
+    white-space: nowrap; /*impede que as linha em que estão as imagens seja quebrada. As imagens estão em linha por causa do Display: inline-block*/
+}
+
+.slideshow figure{
+    display: inline-block;
+}
+
+
+.quote-container{
+    margin-top: 20px;
+    background-color: #63c6ae;
+    padding: 50px 0;
+    border-bottom: 12px solid #58b9a1;
+}
+
+.quote-slideshow h2{
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.quote-slideshow figcaption{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.no-js .quote-slideshow figure + figure{
+    margin-top: 5em;
+}
+
+.footer{
+    font-size: 15px;
+    background-color: #242a2c;
+    padding: 50px 0 250px;
+    color: #454e51;
+}
+
+.footer__links li{
+    list-style: none;
+}
+
+.footer__links a{
+    color: #454e51;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .header{
+        position: fixed;
+    }
+
+    .logo-text{
+        width: 25%;
+        box-sizing: border-box;
+    }
+
+    .header__btnMenu{
+        display: none;
+    }
+
+    .header__nav{
+        float: left;
+        width: 75%;
+        clear: none;
+        max-width: 800px;
+    }
+
+    .header__nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header__nav li{
+        border-bottom: none;
+        flex-grow: 1;
+    }
+
+    .header__nav a{
+        background-color: white;
+       
+    }
+    
+}
